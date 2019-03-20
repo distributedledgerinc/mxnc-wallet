@@ -7,8 +7,8 @@ const networkList = [{
 	server: 'https://horizon.stellar.org'
 }, {
 	name:	'Testnet',
-	phrase: 'Test SDF Network ; September 2015',
-	server: 'https://horizon-testnet.stellar.org'
+        phrase: 'DLI Network ; September 2015',
+        server: 'https://mxnc-node12.distributedledgerinc.com'
 }];
 const fees = {};
 
