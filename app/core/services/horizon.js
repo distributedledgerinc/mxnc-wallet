@@ -3,16 +3,16 @@ import StellarSdk from 'stellar-sdk';
 
 const networkList = [{
 	name:	'Public',
-	phrase: 'Public Global Stellar Network ; September 2015',
-	server: 'https://horizon.stellar.org'
+	phrase: 'Public MXNC Network ; March 2019',
+	server: 'https://horizon.stellar.org-none'
 }, {
 	name:	'Testnet',
         phrase: 'DLI Network ; September 2015',
-        server: 'https://mxnc-node12.distributedledgerinc.com'
+        server: 'https://horizon1.distributedledgerinc.com:8000'
 }];
 const fees = {};
 
-const publicNetwork = getHash('Public Global Stellar Network ; September 2015');
+const publicNetwork = getHash('Public MXNC Network ; March 2019');
 
 function getHash(passphrase) {
 	return new StellarSdk.Network(passphrase)

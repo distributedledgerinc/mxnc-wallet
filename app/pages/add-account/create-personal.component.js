@@ -50,7 +50,7 @@ export default class CreatePersonalController {
 
 		if (this.account.funder === 'Friendbot') {
 			this.$loading.show();
-			return fetch(withQuery('https://friendbot.stellar.org', {addr: publicKey}))
+			return fetch(withQuery('https://horizon1.distributedledgerinc.com:8000', {addr: publicKey}))
 			.then(storeAccount)
 			.catch(err => {
 				console.error('ERROR!', err);

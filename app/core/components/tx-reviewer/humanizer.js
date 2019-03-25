@@ -65,9 +65,9 @@ function createAccountOp(current, account, op, res) {
 	const source = getAccount(account);
 	const dest = getAccount(op.destination);
 	if (current === account) {
-		res.push(`Create ${dest} with ${amount} XLM`);
+		res.push(`Create ${dest} with ${amount} MXNC`);
 	} else {
-		res.push(`Create ${dest} with ${amount} XLM from ${source}`);
+		res.push(`Create ${dest} with ${amount} MXNC from ${source}`);
 	}
 }
 
