@@ -17,7 +17,7 @@ export default /* @ngInject */ function ($scope, Wallet) {
 				return asset.asset_code;
 			}
 		} else {
-			return 'XLM';
+			return 'MXNC';
 		}
 	};
 

@@ -62,7 +62,7 @@ angular.module('app.service.wallet', [])
 			alias:		name,
 			balances: [{
 				asset_type: 'native',
-				asset_code: 'XLM',
+				asset_code: 'MXNC',
 				balance: '0'
 			}]
 		};
@@ -316,7 +316,7 @@ angular.module('app.service.wallet', [])
 			/* eslint-disable camelcase */
 			account.balances = [{
 				asset_type: 'native',
-				asset_code: 'XLM',
+				asset_code: 'MXNC',
 				balance: '0'
 			}];
 			/* eslint-enable camelcase */

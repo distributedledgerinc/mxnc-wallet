@@ -11,7 +11,7 @@ export const sortAssets = res => {
 	credits.sort(sortAssetCodes);
 
 	/* eslint-disable camelcase */
-	native[0].asset_code = 'XLM';
+	native[0].asset_code = 'MXNC';
 	/* eslint-enable camelcase */
 
 	return native.concat(credits);
@@ -69,7 +69,7 @@ export class Account {
 		return fees.baseReserve * (2 + this.subentryCount);
 	}
 
-	//	return true if account has enough balance to send 'amount' XLM in a tx w/ 'numOps' operations
+	//	return true if account has enough balance to send 'amount' MXNC in a tx w/ 'numOps' operations
 	canSend(amount, numOps) {
 		const fees = horizon.getFees(this.network);
 		return (10000000 * (this.getNativeBalance() - this.getReserve() - amount) - fees.baseFee * numOps) >= 0;

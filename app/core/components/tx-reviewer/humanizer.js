@@ -339,7 +339,7 @@ function getAmount(amount) {
 }
 
 function getAsset(asset) {
-	return (asset.code === 'XLM') ? 'XLM' : `${asset.code}.<account-name id="${asset.issuer}"></account-name>`;
+	return (asset.code === 'MXNC') ? 'MXNC' : `${asset.code}.<account-name id="${asset.issuer}"></account-name>`;
 }
 
 // ------------------------------------------------------------------------

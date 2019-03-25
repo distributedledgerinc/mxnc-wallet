@@ -90,7 +90,7 @@ export default class SendController {
 				return asset.asset_code;
 			}
 		} else {
-			return 'XLM';
+			return 'MXNC';
 		}
 	}
 
@@ -171,7 +171,7 @@ export default class SendController {
 			/* eslint-disable camelcase */
 			const assets = [{
 				asset_type: 'native',
-				asset_code: 'XLM'
+				asset_code: 'MXNC'
 			}];
 			/* eslint-enable camelcase */
 
@@ -362,7 +362,7 @@ export default class SendController {
 
 			let operation;
 
-			if (this.flags.isUnregistered && (destAsset.code === 'XLM')) {
+			if (this.flags.isUnregistered && (destAsset.code === 'MXNC')) {
 				operation = StellarSdk.Operation.createAccount({
 					destination: destInfo.id,
 					startingBalance: destAmount

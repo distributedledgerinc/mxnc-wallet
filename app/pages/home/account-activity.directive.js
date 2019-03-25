@@ -122,18 +122,18 @@ export default /* @ngInject */ function  accountActivityController($filter, $int
 					}
 
 					else if (fx.type === 'account_created') {
-						res.desc = `+${formatAmount(fx.amount)} XLM`;
+						res.desc = `+${formatAmount(fx.amount)} MXNC`;
 						res.amount = fx.amount;
-						res.asset_code = 'XLM';
+						res.asset_code = 'MXNC';
 					}
 
 					else if (fx.type === 'trade') {
 						if (!fx.sold_asset_code) {
-							fx.sold_asset_code = 'XLM';
+							fx.sold_asset_code = 'MXNC';
 						}
 
 						if (!fx.bought_asset_code) {
-							fx.bought_asset_code = 'XLM';
+							fx.bought_asset_code = 'MXNC';
 						}
 
 						res.desc = `-${formatAmount(fx.sold_amount)} ${fx.sold_asset_code}` +

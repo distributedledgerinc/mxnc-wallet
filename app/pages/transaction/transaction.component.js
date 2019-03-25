@@ -19,7 +19,7 @@ export default class TransactionController {
 
 		if (effect.type === 'account_created') {
 			this.type = 'recv';
-			this.code = 'XLM';
+			this.code = 'MXNC';
 			this.amount = effect.amount;
 			this.counterparty = effect.from;
 			this.counterpartyLabel = 'page.transaction.from';
@@ -48,9 +48,9 @@ export default class TransactionController {
 			/* eslint-disable camelcase */
 			this.type = 'trade';
 			this.bought_amount = effect.bought_amount;
-			this.bought_code = (effect.bought_asset_type === 'native') ? 'XLM' : effect.bought_asset_code;
+			this.bought_code = (effect.bought_asset_type === 'native') ? 'MXNC' : effect.bought_asset_code;
 			this.sold_amount = effect.sold_amount;
-			this.sold_code = (effect.sold_asset_type === 'native') ? 'XLM' : effect.sold_asset_code;
+			this.sold_code = (effect.sold_asset_type === 'native') ? 'MXNC' : effect.sold_asset_code;
 			this.seed = Wallet.current.id;
 			/* eslint-enable camelcase */
 		}

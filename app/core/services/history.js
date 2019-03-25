@@ -11,7 +11,7 @@ function copyAmount(res, fx, prefix) {
 
 	res[`${prefix}amount`] = fx[`${prefix}amount`];
 	if (fx.asset_type === 'native') {
-		res[`${prefix}asset_code`] = 'XLM';
+		res[`${prefix}asset_code`] = 'MXNC';
 	} else {
 		res[`${prefix}asset_code`] = fx[`${prefix}asset_code`];
 		res[`${prefix}asset_issuer`] = fx[`${prefix}asset_issuer`];
